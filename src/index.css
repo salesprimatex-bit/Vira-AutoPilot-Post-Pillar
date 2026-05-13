@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #020617;
+  --color-brand-surface: #0f172a;
+  --color-brand-sidebar: #020617;
+  --color-brand-accent: #3b82f6;
+  --color-brand-border: #1e293b;
+  --color-brand-text-main: #f8fafc;
+  --color-brand-text-muted: #94a3b8;
+  --color-brand-success: #10b981;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text-main font-sans min-h-screen antialiased;
+  }
+}
+
+.markdown-body {
+  @apply text-slate-300 antialiased;
+}
+.markdown-body h1 { 
+  @apply text-4xl font-extrabold mb-10 text-white leading-tight tracking-tight; 
+}
+.markdown-body h2 { 
+  @apply text-2xl font-bold mt-16 mb-6 text-slate-100 leading-snug border-none; 
+}
+.markdown-body h3 { 
+  @apply text-xl font-bold mt-10 mb-4 text-slate-200 leading-snug; 
+}
+.markdown-body p { 
+  @apply text-[17px] leading-[1.85] mb-6 text-slate-400 font-normal; 
+}
+.markdown-body ul, .markdown-body ol { 
+  @apply mb-8 pl-8 space-y-3; 
+}
+.markdown-body li { 
+  @apply text-[17px] text-slate-400; 
+}
+.markdown-body blockquote { 
+  @apply border-l-4 border-brand-accent pl-6 italic my-10 text-slate-300 bg-white/5 py-6 rounded-r-lg text-lg; 
+}
+.markdown-body a { 
+  @apply text-brand-accent font-semibold underline decoration-1 underline-offset-4 hover:decoration-2 transition-all; 
+}
+.markdown-body hr {
+  @apply my-16 border-white/5;
+}
