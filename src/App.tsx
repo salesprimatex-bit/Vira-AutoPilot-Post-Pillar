@@ -423,9 +423,11 @@ export default function App() {
                 _yoast_wpseo_title: parsedSeo.judul_seo,
                 _yoast_wpseo_metadesc: parsedSeo.meta_deskripsi,
                 _yoast_wpseo_focuskw: task.frasa_kunci,
+                _yoast_wpseo_is_cornerstone: "1",
                 rank_math_title: parsedSeo.judul_seo,
                 rank_math_description: parsedSeo.meta_deskripsi,
                 rank_math_focus_keyword: task.frasa_kunci,
+                rank_math_pillar_post: "on",
               }
             };
 
